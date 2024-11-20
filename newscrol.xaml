@@ -1,0 +1,417 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="newscrol" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1222,2367" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="newscrol" sap:VirtualizedContainerService.HintSize="733,2302" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_dd" />
+      <Variable x:TypeArguments="x:String" Name="str_a" />
+      <Variable x:TypeArguments="x:Int32" Name="int_count" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_table">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">new System.Data.DataTable();</CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="671,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">str_dd</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1" xml:space="preserve">@"&lt;div style=""font-size: 14pt; font-weight: bold;""&gt;
+        RPA 뉴스 검색결과
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;div style=""font-size: 11pt;""&gt;
+        금일({0}) RPA 뉴스 검색 결과를 보고드립니다.
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;div style=""font-size: 11pt; font-weight: bold; color: red;""&gt;
+        총{1} 건의 뉴스를 찾았습니다. 
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;table style=""width: 100%; border-collapse: collapse; font-size: 11pt;""&gt;
+        &lt;tr&gt;
+            &lt;th style=""border: 1px solid black; padding: 8px; text-align: left;""&gt;뉴스제목&lt;/th&gt;
+        &lt;/tr&gt;
+{2}
+    &lt;/table&gt;
+    &lt;br&gt;"</CSharpValue>
+              </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_a</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Int32">
+                <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">int_count</CSharpReference>
+              </OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Int32">0</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 새 탭" sap:VirtualizedContainerService.HintSize="671,2004" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f5077521-6e0b-4ad7-9465-bf2995f2b156" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="637,1764" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'combo box'" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="RPA">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="602a646e-4a01-4102-bd19-5c92644c1a7f" InformativeScreenshot="3594a88f6f3082a4c5ed7e016a7d26c6" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='새 탭 - Chrome' /&gt;&lt;ctrl name='새 탭' role='document' /&gt;&lt;ctrl name='Google 검색 또는 URL 입력' role='combo box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'combo box'" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="%[k(enter)]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="602a646e-4a01-4102-bd19-5c92644c1a7f" InformativeScreenshot="3594a88f6f3082a4c5ed7e016a7d26c6" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='새 탭 - Chrome' /&gt;&lt;ctrl name='새 탭' role='document' /&gt;&lt;ctrl name='Google 검색 또는 URL 입력' role='combo box' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="575,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bccf1fe6-da5f-4d22-84ab-fa4a13fc2480" InformativeScreenshot="45aac1111ca89eafa206dbfaeeb1d7f2" Selector="&lt;html app='chrome.exe' title='RPA - Google 검색' /&gt;&lt;webctrl aaname='뉴스' class='YmvwI' parentid='hdtb-sc' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="575,139" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bccf1fe6-da5f-4d22-84ab-fa4a13fc2480" InformativeScreenshot="b50be7dfe977f16c3d77d02e20996757" Selector="&lt;html app='chrome.exe' title='RPA - Google 검색' /&gt;&lt;webctrl id='hdtb-tls' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'DIV'" sap:VirtualizedContainerService.HintSize="575,187" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="지난 1주">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="8">
+                  <x:String>최근 항목</x:String>
+                  <x:String>지난 1시간</x:String>
+                  <x:String>지난 1일</x:String>
+                  <x:String>지난 1주</x:String>
+                  <x:String>지난 1개월</x:String>
+                  <x:String>지난 1년</x:String>
+                  <x:String>자료실</x:String>
+                  <x:String>기간 설정...</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93ea3e59-0829-4f95-8a90-ef21f953ecb1" InformativeScreenshot="b24276047169a121b041cdfb264be6d9" Selector="&lt;html app='chrome.exe' title='RPA - Google 검색' /&gt;&lt;webctrl aaname='최근 항목' class='KTBKoe' parentid='tn_1' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: RPA - Google 검색" sap:VirtualizedContainerService.HintSize="575,84" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="4c9d8530-fbfb-41d1-94af-e65a0b8eb395" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4c9d8530-fbfb-41d1-94af-e65a0b8eb395" Version="V3">
+                      <uix:NExtractData.DataTable>
+                        <InOutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">dt_table</CSharpReference>
+                        </InOutArgument>
+                      </uix:NExtractData.DataTable>
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=RPA&amp;sca_esv=e16b3b1b9fa35a8e&amp;sca_upv=1&amp;tbm=nws&amp;sxsrf=ADLYWIJUeBvbZ1iiWfVMvfKanLHL3ykegg:1718850306696&amp;tbas=0&amp;source=lnt&amp;sa=X&amp;ved=2ahUKEwibhM-vkOmGAxX2ja8BHYfrAIAQpwV6BAgBEAs&amp;biw=1920&amp;bih=945&amp;dpr=1" DesignTimeRectangle="238, 318, 652, 1613" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='rso' tag='DIV' /&gt;" Guid="c55240a7-82fb-430e-8516-5c657c0a66ff" InformativeScreenshot="203b4f64fb5b867863372a825440cbf0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA - Google 검색' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="625b999baa72f5af11d2dea966ff868a.jpg" Selector="&lt;html app='chrome.exe' title='RPA - Google 검색' /&gt;" Title="RPA - Google 검색" Url="https://www.google.com/search*" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="575,454" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="541,258" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,170" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Int32">
+                                <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">int_count</CSharpReference>
+                              </OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Int32">
+                                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">int_count + 1</CSharpValue>
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">str_a</CSharpReference>
+                              </OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7" xml:space="preserve">str_a + @$"&lt;tr&gt;
+            &lt;td style=""border: 1px solid black; padding: 8px; text-align: left;""&gt;
+     &lt;a href=""{CurrentRow[1]}""&gt; {CurrentRow[0]}&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;"</CSharpValue>
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">dt_table</CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="575,122" sap2010:WorkflowViewState.IdRef="WriteLine_1">
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">string.Format(str_dd, DateTime.Now.ToString("yyyyMMdd"), int_count, str_a)</CSharpValue>
+              </InArgument>
+            </WriteLine>
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send SMTP Mail Message" Email="yp78612@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="575,177" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" Password="ytnwpuqbxdejbfqe" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="yp" To="yp78612@gmail.com" UseOAuth="True">
+              <ui:SendMail.Body>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">string.Format(str_dd, DateTime.Now.ToString("yyyyMMdd"), int_count, str_a)</CSharpValue>
+                </InArgument>
+              </ui:SendMail.Body>
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA7PSURBVGhDvZcJeFRVlscLCBgSICEEkkCWykL2kI0QICErJAFCEsUFpBNiO4P4aQ8DSuMCBFsZ2RPCEoQsLCKIYhDt1m6W6lbQVlm0Z2wYGw22EJpJkwpVSaoqFe6Zc+6979WrWKKoM+fj/53l3qr3O3d5KXQ/hw11G+A9x9+n8vnIoOqmhPDmM5PHtVyakmS8njceruelwaWsZOMnk+JbmlOiDM+PDaouHOldFug+SO81sJ/Xg8GeFQcn+h45NzXg4rXiQBPp7NSACwfSfZvnBnmW0xz5mJ/XCPqRIL9FzUmRBgVUeE2cq+RC/8hN5bqelwzt0yOZqSz4VufdwXA7/bMkyLIuwbtm1F39/eSjf5oR+FL96Kq/TUlsv56byjhYToqzJ3AUeW2N1DYtjpnLQlzC3k6txYE3iwMGl0qMH2dL9QEIrhwNAqIVdcDxWnYKU1b6GsbXspN5fi0nBdqLosFc5hrwh8hcFsSWRQ1b3k+nw393YHReT4yPO0+ryUWAfbwKSj5HAAvRnFRoK4h1CfVjVB7i+ZBE+3673893/heZiUbtSnJAFVQLK5WdAq2krGTWmpXE/ic/3uXK44qix+N0j0NUM/edp8zlc/TQXhLYkzfKfZpE/G57MsS/SoFVwJTVJTjhk4THMRrn8FhrzU6WPgWMM8MlLALNDnXo3jAwzwoA80w/1CgwzxjlaIigcYx/BqFpvrkY50335eMH032PSEzX9kSwf5V2dRUYsbIyzkJI9FenSGCKsUbiY3w8EcylAp7D5nmCeepQLlOOO3Q9PAG6FmZC9zOzofvp2djESNHQLH/onJ8koAt9wJQ1CLqXzADLc78Ac9EI2hXm7z4gQOI62/1+I+a3cijNcZC5AFXghBfQSdSIiDMTmeLbpkUL+GJ/6PrXdLAd2ATW3avBtn8dWGuXgHXH02B7fStY960F22tbwDR5AHQtLgT7WQPY33sT7B++A92r5kHXEzMwPwI9v23CxgfzHfmX0CELJbLD6MJemJTQzgERmiAI1GlVCY6AOajwV5SYN5EEV9CTOmaGMvU4VKaA5TflYP/PD6Dn/aPQtWAKWNY/CtaDm8BSX8WbMGUOwvEPwbJuIZimDgNLzb/DrbZWsOxcDvbzfwLboc18F+lYHZk88l2J7bCP0mNbnFaRgCiWQFrP44xxTIFVlUlK5N5ciudZnn+6B6bxOrAdeQksmxdD59x46PndHrDuXw/Wxt+AjRrIHwK9l/4C5jlRcDNNB50Pp0Fvy1/B/EAk2A5vB1vzDjDnevAGrhYHdkhsYUuC/KrUVSRpwJ0BCU4jaqJP7RvplbcPv8R4aWlV7Rc+gZ539kL3ygfBfuYEgq8RDbyyAUzp/cC690Ww/xfuwrZlYP/0PegxHAbbG3Vw6+uL6LeDiXYAj9CNkiCrRNfpBvl66NcvznGsJkJ9g+INqECOmMa4VzQ5gV0pyoCbDXVgPfcJ2FuvAlnnfRFiB3DFTNO8oPORyRzO/pcPOEh31YN49mvB2rAKbC+v4zW6L3SprbhL3SseADPCmjL6g2X1QzhnLZhxl761A/qFKbuzdpfBuRlp6uo5A0rgjHFSSpwI1+4t4tCurGvBJLEDJWOgE49B798+g+5n7wPLxsfxop4Ey5YnwUoXu/E5foT4WwrhzLNG84vec+wA9Jw4BPYPfsuPnvk+fCWX4nfhd9IPQA4/aISHPuWVeyAV9egLBSrY33FVnaGF/q5oUjwz1qyFWyaTxBXWamTw9qc22GWwwsUlD/H3trnIh4PT8TAXDOeXuhtfidam5/nRsdSvwrE1YJ42DO/BULDhEbO93Yg74sFfrSY89z3HX+W7RXHnbD3Qr1jegE9WcGXS/lKWvL8MUvbfDb+7L10CJjDuJytK4NAUf42+o367RBb21nkbLNzdCWlVHTBh1U3u1z62RV5ibAKPhrnAmzfUeS8ei4k63InH+FvIikfD9upmfonpvW/d8SzYPz4G3ctKoWvpLP43gu6DpXoRNolHEXdJfY1Gr849n/RyKSN4aqRiXZGAldBfTyRo9IomJUB7zRqJTSt+Cx5pEuDjV3VAGmo8xah7lp1zXGL6K4srx3Opznnx/Gh1v1DJd4R2yoxzaNUtL+CZx2Nje6uBv326V87lf4nN9D34fSEeA/T8+CTuK2GJ2EDyy2WQhCK/9ZEM9vXEOIYrzYEpvizzK2UFTDk2BD+r2qQCk1JXOkT5yfI5jp8SSjMyp7thLhktfkqg+O7IZmm36MKqvnC4Ot69NAy8Pft764al+pUm7SuFvspoKIHPsxLY5XQCpybigfzl9FhmfvsIhydb0GhGUKNGCI7QKZra3b8+C+33hKsNODWi5ARGdwVr6u7gMRG/m6Sny03js4PA/m40VEz3qtSNfjCuOnFvCQiVck8NjNs7i6351RQVuiU9DlomxsGVuwskOsBRPPME6lqiCUXLH290gv8psu6MwLdSNGz8t1E1uvCnJhnG7SmBhD2zmLaJhD3FjOofTUsCDi91Y9OLEh9g5sabkLzC6BCCOuV9tGXBapdAdyLL+jCwn45i9tPRcPjFwCO6mA35LeP2zAJXSthdzOauzmctaTHsK1TLhFiwnP2Yw1+81gtJCEUiOCW+vdrhV4sOw/XZMS7hbqsHgsG2NxzhxyL8WNZ7OhK+fD20RRe/eyYbtxuBUQlcxTymOsVUO1qazBv4ChtQLu/Jv/ZAIgJxLZceRaDCa2vauhEKfv05/L58nmtQF+p+Qg/2d/DYnIpg9lNjue89HQFt74QadQlNxRDfhLDov0v5tUXw1fho9mVqFOP0aHUnLTAOwRUpsE41FzFvVsYVi/8Amxf8B/z3Ivy5/FgO/rjDn973B0PXL1GLQ5hlnR56DoYBwdpPhbHeU+HQeyqC5zxGr4trmsHiEdJZMyG+EYVxXOMMFouqeXgifJkarTaw/US3CqdVwm3yvmNKjb5LMQJ1wCrCJkin8Qiht78fijuAHmNdzNZCY2zjdBZHwCiKycc1zOA51WMbprMJdUXwWUYs/ki7wh905JwVEp5th/hnb3BPINxr4z5emRtPNU39BB5HbvabHIpg7e/rsZFQzENlAxhjjXsR85ouYl1OC0GSYhBUBUeviOqkpxZlQPeZj/izruIfMAISEnCu1Xfs23MvtPby72QdH3KoXoQjQIeCGdUc9WBGunRoTIsu8LGU5tj6GbjKAja2frpTHFNfxEi8jvPOvL6TP4yssv4mxCFAHEIJf+cq2NAhvw3g1pfPIVwIgjoLYfG/k0EITcJY5sdr/Qw6/zmx1QJOwPJmZE6K3lWIDZAvYqQ51aXycQDNZ20Q+8wNiEUQLowJite+R8q85rNW+W0AvR9PQsBAXG0CJB9I0ATLc+GlsL7xca8andekMZUEyUF3FQGJN7NLkagJifyj1s/kIwHm7zJBDIIoIqiYZ/6pgmrHnOfcwM/elN+Cx+f6awqo1BgEHo0iHwi9vEY5xu8LlWS6l+oGDHbz5nA7iyBqZwFvIprH2BR6rahGc/IPzAeTrZM/+Er7LZi6zgjRCE3g0U8L74hvqDWao9SmrjfCFbxHZCZrJ65+OsEK0D8F8Jh8r9ZzjZbjAUzvh79GyYKeSDNE7yyUoIUQ9VIBwmP+klITdZ7L2uoP6vjDyaiJClxNgvuWZANaleNc+oxiHV/g2edQBOfPuN4LoJom98cmArBBUT9b73uew5N55wcvikIwRZE7pjFHXuBU52M7RG3LmX0SQdgbZ6yQt7YdIhEyCqV4ReU7O+ANzZknO/xZA7Qb6HiowBr5IbQ2F+pFlRe6z5f4Ol1/dzfviOpc41iEI3FACUk+UorGyGtrtBN0BLR24WovHPvcBrXHumDL8S5szOK04mQmqxlWn66D147GINQoWmX0fjL2Q0iKFY3CfBTY/ziSkWhMPT6K+RSHVSlQkXUIWzeVRdZNwxiFtQiZR2xHL/Oxcjz75Xns8MXfS7Tvtz9f/RSy981j2fVZCItgiv7oi4AoNR/JJeFRI6gBaFg2tEliO4x2IWxDTrsCNnY7ijyPpzrlBK3mNCbznH2/gNWn6jjgN6Z/SFzgMdVqP94LqY1l4rP4ucvH8K2igvmiJ2liA8VOY1zBfv2dV1+x4TPDqnCF+QPCt+czFZx7RSIP30bjfEfUmOoR24Sopngxrq3lsaWvpCCMDx4HAvMhUAFpGC5jko+zx7GVle5VEte1BT2Vfl6BUKTAR2zLl9KO9821NWV+PoRtzePwFKfU5cDlP+BllFAc0ECQPlgT3m7wZrxmGI45Cv2lA8O+kpjfbW4+7vrQ9VnG8K35oIgeqvUEI3wuU8DIC+XyMUV98/CteVB9KBrhhiMsgXmzHoMX5iRvWfNi5HtODuM1Uttbw4z67zo6fW3oBP/K0C25jKQ8VAjjLehJmIehd8wRY5SrdfQUaz+X+VKGhHLAidhLAnuBXfVDGcbcl2YMLJN4P8x8poetooe7Umhtjgqp1mtzvzVPkR7n02dIh97An8oEpgAahiG48AJ2CEIPpaaEMF5RcdcqiXVn5j1dX8XBUAJCeJICpt+McS01lculjstc8aQ5DeM5kFa9BoJ1rtlPejJePzkEVs4fePtL+33mEe9bFrwm04igKkjo5lwI2ZyN8NmMYqUWinOoTqKcPqPNL7+LlxLhCMxZnigPrHtCz4nBzI5qO+phrCh0q5QYP83chrvrA1emt3DAGgSvkR5zDolxSE0WSoypUsez2JI98QKOg3oAQXJwURP+xGDy8MlO9/N6v34/7MLeiXkVhVQpYMEIpa/J5qDB1RQLr8Qh1WKMlLFtIq4+vl0IVMBKuavQ9hN3sbY3BxlXVLj9uPP+Q412Y8TcqCYCJUitgjZO4Q0EVU/hYxjz+q5X8b+BCIjABC10/C41bntzYPuKigFV3p79vOVj/u+NGhmS5l8Z8GTqeQLnwJuyVIlaFkzeOpHgHSLw44MYCo5vGmh4fPaARf+v4K6MmqHL7l0WVj3y0QTD6OUTWqiJwA2Z7OBrY3CF3Yxf7Hdref05t+YNjw6oLi/sN//ngdbp/hfU5reCXwhSkQAAAABJRU5ErkJggg==" InformativeScreenshot="e791495b641eb5651f6bb17d1b1d92b2.png" Selector="&lt;html app='chrome.exe' title='새 탭' /&gt;" Title="새 탭" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
